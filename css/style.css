@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Rubik&display=swap');
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-line: none;
+  color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Header start */
+
+.header {
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 390px;
+  height: 40px;
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav__link::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #FFF;
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.nav__link:hover::after,
+.nav__link:focus::after,
+.nav__link:active::after {
+  opacity: 1;
+}
+
+.language {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language__option {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.language__option_non-active {
+  color: #B7B7B7;
+}
+
+/* Header end */
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Intro section start */
+
+.intro {
+  height: 750px;
+  background-image: url(../img/intro-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 790px;
+  height: 652px;
+}
+
+.intro__title {
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.intro__btn {
+  width: 198px;
+  height: 50px;
+  border: none;
+  color: #FFF;
+  background-color: #DB2512;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* Intro section end */
